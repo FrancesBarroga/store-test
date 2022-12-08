@@ -40,3 +40,9 @@
 .text-container {
     margin: 1rem
 }
+
+.pagination-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0;
+}

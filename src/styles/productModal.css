@@ -1,0 +1,22 @@
+.dialog-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+}
+
+.MuiDialog-paper {
+    width: 45rem;
+}
+
+input {
+    padding: 0.25rem !important;
+}
+
+.field-container {
+    margin: 0.5rem 0;
+}
+
+.category-list {
+    display: flex;
+}
