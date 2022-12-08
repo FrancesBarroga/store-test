@@ -1,0 +1,42 @@
+.table-header {
+    background: var(--color-blue);
+}
+
+.header-cell {
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+.table-body {
+    background: var(--color-light-gray);
+}
+
+.bg-pink {
+    background: var(--color-pink);
+}
+
+.bg-yellow {
+    background: var(--color-yellow);
+}
+
+.bg-purple {
+    background: var(--color-purple);
+}
+
+.tag {
+    text-align: center;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    text-transform: capitalize;
+}
+
+.details-container {
+    display: flex;
+    padding: 1rem;
+    font-weight: 500;
+    color: #888686;
+}
+
+.text-container {
+    margin: 1rem
+}

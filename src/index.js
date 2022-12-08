@@ -1,13 +1,49 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const theme = createTheme({
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        containedPrimary: {
+          textTransform: "none",
+          boxShadow: "none",
+        },
+        text: {
+          textTransform: "none",
+          "&:hover": {
+            backgroundColor: "transparent",
+          },
+        },
+        outlinedSecondary: {
+          textTransform: "none",
+        },
+      },
+    },
+  },
+  palette: {
+    primary: {
+      main: "#326295",
+    },
+    secondary: {
+      main: "#3d3d3d",
+    },
+    text: {
+      primary: "#222222",
+    },
+  },
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
